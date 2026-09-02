@@ -1,10 +1,19 @@
 import Koa from 'koa';
 import Router from 'koa-router';
 import slow from 'koa-slow';
+import cors from 'koa-cors';
 
 const app = new Koa();
 const router = new Router();
 const port = process.env.PORT || 3000;
+
+app.use(cors({
+  origin: [
+    'http://localhost:7070',
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 
 app.use(slow({
   delay: 1500,
