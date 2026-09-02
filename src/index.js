@@ -44,5 +44,5 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`сервер запустился на http://localhost:${port}`);
+  console.log(`сервер запустился на ${port}`);
 });
