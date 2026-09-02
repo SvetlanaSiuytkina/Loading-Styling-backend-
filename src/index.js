@@ -4,7 +4,7 @@ import slow from 'koa-slow';
 
 const app = new Koa();
 const router = new Router();
-const port = process.env.PORT || 7070;
+const port = process.env.PORT || 3000;
 
 app.use(slow({
   delay: 1500,
@@ -44,5 +44,5 @@ app.use(router.routes());
 app.use(router.allowedMethods());
 
 app.listen(port, '0.0.0.0', () => {
-  console.log(`сервер запустился на ${port}`);
+  console.log(`сервер запустился на \${port}`);
 });
