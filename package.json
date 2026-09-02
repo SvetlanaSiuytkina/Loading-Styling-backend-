@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "koa": "^3.2.1",
     "koa-bodyparser": "^4.4.1",

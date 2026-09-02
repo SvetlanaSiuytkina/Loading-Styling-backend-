@@ -46,5 +46,3 @@ app.use(router.allowedMethods());
 app.listen(port, () => {
   console.log(`сервер запустился на http://localhost:${port}`);
 });
-
-export { app, port };
