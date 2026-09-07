@@ -50,6 +50,6 @@ router.get('/health', (ctx) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
   console.log(`сервер запустился на ${port}`);
 });
